@@ -1,0 +1,71 @@
+{
+  "id": "E6B10FA2-8741-4AF0-A068-DE306B62AA13",
+  "title": "SpecIF enumeration datatype definitions",
+  "specifVersion": "0.11.6",
+  "dataTypes": [
+    {
+      "id": "DT-UML_DataAccess",
+      "title": "UML:DataAccess",
+      "description": "Enumerated values for a UML connector direction",
+      "type": "xs:enumeration",
+      "values": [
+        {
+          "id": "V-UML_DataAccess-0",
+          "title": "Public"
+        },
+        {
+          "id": "V-UML_DataAccess-1",
+          "title": "Protected"
+        },
+        {
+          "id": "V-UML_DataAccess-2",
+          "title": "Private"
+        },
+        {
+          "id": "V-UML_DataAccess-3",
+          "title": "Internal"
+        },
+        {
+          "id": "V-UML_DataAccess-4",
+          "title": "Protected Internal"
+        },
+        
+      ],
+      "revision": 1,
+      "changedAt": "2019-03-08T16:00:00+02:00"
+    },
+    {
+      "id": "DT-UML_ConnectorDirection",
+      "title": "UML:ConnectorDirection",
+      "description": "Enumerated values for a UML connector direction",
+      "type": "xs:enumeration",
+      "values": [
+        {
+          "id": "V-UML_ConnectorDirection-0",
+          "title": "Unspecified"
+        },
+        {
+          "id": "V-UML_ConnectorDirection-1",
+          "title": "Source -> Destination"
+        },
+        {
+          "id": "V-UML_ConnectorDirection-2",
+          "title": "Destination -> Source"
+        },
+        {
+          "id": "V-UML_ConnectorDirection-3",
+          "title": "Bi-Directional"
+        }
+      ],
+      "revision": 1,
+      "changedAt": "2019-03-08T16:00:00+02:00"
+    }
+  ],
+  "propertyClasses": [],
+  "resourceClasses": [],
+  "statementClasses": [],
+  "hierarchyClasses": [],
+  "resources": [],
+  "statements": [],
+  "hierarchies": []
+}
