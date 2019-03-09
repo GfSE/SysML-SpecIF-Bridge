@@ -36,6 +36,16 @@
       "objectClasses": [ "RC-UML_Operation" ]
     },
     {
+      "id": "SC-UML_Classifier",
+      "title": "UML:ClassifierReference",
+      "description": "Points to an UML elemnt classifier.",
+      "instantiation": [ "auto", "user" ],
+      "revision": 1,
+      "changedAt": "2019-03-08T16:00:00+02:00",
+      "subjectClasses": [ "RC-UML_Element", "RC-UML_Attribute", "RC-UML_Operation" ],
+      "objectClasses": [ "RC-UML_Operation" ]
+    },
+    {
       "id": "SC-UML_Relation",
       "title": "UML:Relation",
       "description": "A UML relation between UML model artificts defined in an UML model.",

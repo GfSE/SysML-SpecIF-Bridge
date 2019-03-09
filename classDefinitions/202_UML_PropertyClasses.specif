@@ -5,15 +5,9 @@
   "dataTypes": [],
   "propertyClasses": [  
         {
-          "id": "PC-UML_Type",
-          "title": "UML:Type",
-          "dataType": "DT-ShortString",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_Classifier",
-          "title": "UML:Classifier",
+          "id": "PC-Type",
+          "title": "dcterms:type",
+          "description": "The nature or genre of the resource. (http://purl.org/dc/elements/1.1/type)"
           "dataType": "DT-ShortString",
           "revision": 1,
           "changedAt": "2019-03-08T16:00:00+02:00"
@@ -29,6 +23,13 @@
           "id": "PC-UML_DataAccess",
           "title": "UML:DataAccess",
           "dataType": "DT-UML_DataAcces",
+          "revision": 1,
+          "changedAt": "2019-03-08T16:00:00+02:00"
+        },
+        {
+          "id": "PC-UML_Multipilcity",
+          "title": "UML:Multiplicity",
+          "dataType": "DT-ShortString",
           "revision": 1,
           "changedAt": "2019-03-08T16:00:00+02:00"
         },
