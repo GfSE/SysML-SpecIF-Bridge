@@ -20,11 +20,11 @@
           "changedAt": "2019-03-08T16:00:00+02:00"
         },
         {
-          "id": "PC-UML_DataAccess",
-          "title": "UML:DataAccess",
-          "dataType": "DT-UML_DataAcces",
+          "id": "PC-UML_VisibilityKind",
+          "title": "UML:VisibilityKind",
+          "dataType": "DT-UML_VisibilityKind",
           "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
+          "changedAt": "2019-03-09T22:00:00+02:00"
         },
         {
           "id": "PC-UML_Multipilcity",

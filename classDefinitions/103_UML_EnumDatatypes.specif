@@ -4,29 +4,33 @@
   "specifVersion": "0.11.6",
   "dataTypes": [
     {
-      "id": "DT-UML_DataAccess",
-      "title": "UML:DataAccess",
+      "id": "DT-UML_VisibilityKind",
+      "title": "UML:VisibilityKind",
       "description": "Enumerated values for a UML connector direction",
       "type": "xs:enumeration",
       "values": [
         {
-          "id": "V-UML_DataAccess-0",
+          "id": "V-UML_VisibilityKind-0",
           "title": "Public"
         },
         {
-          "id": "V-UML_DataAccess-1",
-          "title": "Protected"
-        },
-        {
-          "id": "V-UML_DataAccess-2",
+          "id": "V-UML_VisibilityKind-1",
           "title": "Private"
         },
         {
-          "id": "V-UML_DataAccess-3",
+          "id": "V-UML_VisibilityKind-2",
+          "title": "Protected"
+        },
+        {
+          "id": "V-UML_VisibilityKind-3",
+          "title": "Package"
+        },
+        {
+          "id": "V-UML_VisibilityKind-4",
           "title": "Internal"
         },
         {
-          "id": "V-UML_DataAccess-4",
+          "id": "V-UML_VisibilityKind-5",
           "title": "Protected Internal"
         },
         
