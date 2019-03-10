@@ -2,7 +2,7 @@
 A bridge between SysML and SpecIF.
 
 ## Purpose
-An investigation of the [Lehrstuhl für Virtuelle Produktentwicklung (VPE)](https://vpe.mv.uni-kl.de/startseite/) at the TU Kaiserslautern has shown, that an exchange of SysML data between any of widely known modeling tools is practically impossible because of compatibility issues. Correctly transferred model-elements and properties are a minor share, even though the XMI standard is being used by all tools.
+An investigation of the [Lehrstuhl für Virtuelle Produktentwicklung (VPE)](https://vpe.mv.uni-kl.de/startseite/) at the TU Kaiserslautern has shown, that an exchange of SysML data between any of the widely known modeling tools is practically impossible because of compatibility issues. Correctly transferred model-elements and properties are a minor share, even though the XMI standard is being used by all tools.
 
 The SpecIF Initiative is pursuing two goals:
 - provide a working model interchange format for SysML modeling tools of a different kind.
