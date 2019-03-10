@@ -1,0 +1,55 @@
+{
+  "id": "CA63CAFE-30E2-4FC6-A29E-A079EF65BCBB",
+  "title": "SpecIF resource class definitions for UML",
+  "specifVersion": "0.11.6",
+  "dataTypes": [],
+  "propertyClasses": [],
+  "resourceClasses": [
+    {
+      "id": "RC-UML_Element",
+      "title": "UML:Element",
+      "description": "A model element (graph node).",
+      "instantiation": [ "auto", "user" ],
+      "propertyClasses": ["PC-Name", 
+                          "PC-Text", 
+                          "PC-Type", 
+                          "PC-UML_VisibilityKind", 
+                          "PC-UML_Multipilcity",
+                          "PC-Status"],
+      "revision": 1,
+      "changedAt": "2019-03-08T16:00:00+02:00"
+    },
+    {
+      "id": "RC-UML_Attribute",
+      "title": "UML:Attribute",
+      "description": "A general UML attribute (may be a class attribute, a tagged value or an operation parameter).",
+      "instantiation": [ "auto", "user" ],
+      "propertyClasses": ["PC-Name", 
+                          "PC-Text", 
+                          "PC-Type", 
+                          "PC-UML_VisibilityKind",  
+                          "PC-UML_AttributeValue", 
+                          "PC-Status"],
+      "revision": 1,
+      "changedAt": "2019-03-08T16:00:00+02:00"
+    },
+    {
+      "id": "RC-UML_Operation",
+      "title": "UML:Operation",
+      "description": "A operation definition in UML (similar to a method or function in a programming language).",
+      "instantiation": [ "auto", "user" ],
+      "propertyClasses": ["PC-Name", 
+                          "PC-Text", 
+                          "PC-Type", 
+                          "PC-UML_VisibilityKind",
+                          "PC-Status"],
+      "revision": 1,
+      "changedAt": "2019-03-08T16:00:00+02:00"
+    }
+  ],
+  "statementClasses": [],
+  "hierarchyClasses": [],
+  "resources": [],
+  "statements": [],
+  "hierarchies": []
+}
