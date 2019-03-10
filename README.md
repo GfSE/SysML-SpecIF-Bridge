@@ -1,5 +1,5 @@
-# SysML-to-SpecIF-Bridge
-A bridge from SysML to SpecIF
+# SysML-SpecIF-Bridge
+A bridge between SysML and SpecIF.
 
 ## Purpose
 An investigation of the Lehrstuhl für Virtuelle Produktentwicklung (VPE) at the TU Kaiserslautern has shown, that an exchange of SysML data between any of widely known modeling tools is practically impossible because of compatibility issues. Correctly transferred model-elements and properties are a minor share, even though the XMI standard is being used by all tools.
