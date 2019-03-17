@@ -7,7 +7,7 @@
         {
           "id": "PC-Type",
           "title": "dcterms:type",
-          "description": "The nature or genre of the resource. (http://purl.org/dc/elements/1.1/type)"
+          "description": "The nature or genre of the resource. (http://purl.org/dc/elements/1.1/type)",
           "dataType": "DT-ShortString",
           "revision": 1,
           "changedAt": "2019-03-08T16:00:00+02:00"
