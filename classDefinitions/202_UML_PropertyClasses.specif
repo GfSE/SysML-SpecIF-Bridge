@@ -1,7 +1,7 @@
 {
   "id": "0885F9CB-2218-4087-99D8-BB94BACB334F",
   "title": "SpecIF property class definitions, required additionally for UML mapping.",
-  "specifVersion": "0.11.6",
+  "specifVersion": "0.11.7",
   "dataTypes": [],
   "propertyClasses": [  
         {
@@ -13,11 +13,11 @@
           "changedAt": "2019-03-08T16:00:00+02:00"
         },
         {
-          "id": "PC-UML_AttributeValue",
-          "title": "UML:AttributeValue",
+          "id": "PC-UML_Value",
+          "title": "UML:Value",
           "dataType": "DT-String",
           "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
+          "changedAt": "2019-03-24T12:00:00+02:00"
         },
         {
           "id": "PC-UML_VisibilityKind",
@@ -85,7 +85,6 @@
   ],
   "resourceClasses": [],
   "statementClasses": [],
-  "hierarchyClasses": [],
   "resources": [],
   "statements": [],
   "hierarchies": []

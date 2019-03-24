@@ -1,7 +1,7 @@
 {
   "id": "DAB858A7-41B3-4D6A-9C1F-0AD460430C54",
   "title": "SpecIF statement class definitions for UML represenation",
-  "specifVersion": "0.11.6",
+  "specifVersion": "0.11.7",
   "dataTypes": [],
   "resourceClasses": [],
   "statementClasses": [
@@ -11,9 +11,9 @@
       "description": "States that the relation subject is an instance of the relation object.",
       "instantiation": [ "auto", "user" ],
       "revision": 1,
-      "changedAt": "2019-03-09T22:00:00+02:00",
-      "subjectClasses": [ "RC-UML_Element", "RC-UML_Attribute", "RC-UML_Operation" ],
-      "objectClasses": [ "RC-UML_Operation" ]
+      "changedAt": "2019-03-24T12:00:00+02:00",
+      "subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement"],
+      "objectClasses": [ "RC-UML_PassiveElement" ]
     },
     {
       "id": "SC-UML_StereotypeReference",
@@ -21,9 +21,9 @@
       "description": "Points to an UML Stereotype definition.",
       "instantiation": [ "auto", "user" ],
       "revision": 1,
-      "changedAt": "2019-03-08T16:00:00+02:00",
-      "subjectClasses": [ "RC-UML_Element", "RC-UML_Attribute", "RC-UML_Operation" ],
-      "objectClasses": [ "RC-UML_Element" ]
+      "changedAt": "2019-03-24T12:00:00+02:00",
+      "subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
+      "objectClasses": [ "RC-UML_PassiveElement" ]
     },
     {
       "id": "SC-UML_AttributeReference",
@@ -31,9 +31,9 @@
       "description": "Points to an UML attribute/operation parameter/tagged value definition.",
       "instantiation": [ "auto", "user" ],
       "revision": 1,
-      "changedAt": "2019-03-08T16:00:00+02:00",
-      "subjectClasses": [ "RC-UML_Element", "RC-UML_Operation" ],
-      "objectClasses": [ "RC-UML_Attribute" ]
+      "changedAt": "2019-03-24T12:00:00+02:00",
+      "subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
+      "objectClasses": [ "RC-UML_ActiveElement" ]
     },
     {
       "id": "SC-UML_OperationReference",
@@ -41,9 +41,19 @@
       "description": "Points to an UML operation definition.",
       "instantiation": [ "auto", "user" ],
       "revision": 1,
-      "changedAt": "2019-03-08T16:00:00+02:00",
-      "subjectClasses": [ "RC-UML_Element" ],
-      "objectClasses": [ "RC-UML_Operation" ]
+      "changedAt": "2019-03-24T12:00:00+02:00",
+      "subjectClasses": ["RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
+      "objectClasses": [ "RC-UML_ActiveElement" ]
+    },
+    {
+      "id": "SC-UML_BehaviorReference",
+      "title": "UML:BehaviorReference",
+      "description": "Points to a behavior definition (active element or source code).",
+      "instantiation": [ "auto", "user" ],
+      "revision": 1,
+      "changedAt": "2019-03-24T12:00:00+02:00",
+      "subjectClasses": ["RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
+      "objectClasses": [ "RC-UML_ActiveElement", "RC-UML_SourceCode" ]
     },
     {
       "id": "SC-UML_Relationship",
@@ -51,9 +61,9 @@
       "description": "A Relationship is a Statement that specifies some kind of relationship between UML Elements defined in an UML model.",
       "instantiation": [ "auto", "user" ],
       "revision": 1,
-      "changedAt": "2019-03-09T22:00:00+02:00",
-      "subjectClasses": [ "RC-UML_Element", "RC-UML_Attribute", "RC-UML_Operation" ],
-      "objectClasses": [ "RC-UML_Element", "RC-UML_Attribute", "RC-UML_Operation" ],
+      "changedAt": "2019-03-24T12:00:00+02:00",
+      "subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
+      "objectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
       "propertyClasses": [ "PC-Type",
                            "PC-Name", 
                            "PC-Text", 
@@ -68,7 +78,6 @@
                           ]
     }
   ],
-  "hierarchyClasses": [],
   "resources": [],
   "statements": [],
   "hierarchies": []

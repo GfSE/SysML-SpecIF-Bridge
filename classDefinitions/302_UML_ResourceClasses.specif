@@ -1,50 +1,60 @@
 {
   "id": "CA63CAFE-30E2-4FC6-A29E-A079EF65BCBB",
   "title": "SpecIF resource class definitions for UML",
-  "specifVersion": "0.11.6",
+  "specifVersion": "0.11.7",
   "dataTypes": [],
   "propertyClasses": [],
   "resourceClasses": [
     {
-      "id": "RC-UML_Element",
-      "title": "UML:Element",
-      "description": "A model element (graph node).",
+      "id": "RC-UML_PassiveElement",
+      "title": "UML:PassiveElement",
+      "description": "A passive model element (e.g. class, component, state etc.).",
+      "extends" : "RC-State",
       "instantiation": [ "auto", "user" ],
-      "propertyClasses": ["PC-Name", 
-                          "PC-Text", 
+      "propertyClasses": [ 
                           "PC-Type", 
                           "PC-UML_VisibilityKind", 
-                          "PC-UML_Multipilcity",
-                          "PC-Status"],
+                          "PC-UML_Multipilcity"
+                          ],
       "revision": 1,
-      "changedAt": "2019-03-08T16:00:00+02:00"
+      "changedAt": "2019-03-24T12:00:00+02:00"
     },
     {
-      "id": "RC-UML_Attribute",
-      "title": "UML:Attribute",
-      "description": "A general UML attribute (may be a class attribute, a tagged value or an operation parameter).",
+      "id": "RC-UML_ActiveElement",
+      "title": "UML:ActiveElement",
+      "description": "An active model element (e.g. activity, event, operation, attribute etc.).",
+      "extends" : "RC-Actor",
       "instantiation": [ "auto", "user" ],
-      "propertyClasses": ["PC-Name", 
-                          "PC-Text", 
+      "propertyClasses": [ 
                           "PC-Type", 
-                          "PC-UML_VisibilityKind",  
-                          "PC-UML_AttributeValue", 
-                          "PC-Status"],
+                          "PC-UML_Value",
+                          "PC-UML_VisibilityKind", 
+                          "PC-UML_Multipilcity"
+                          ],
       "revision": 1,
-      "changedAt": "2019-03-08T16:00:00+02:00"
+      "changedAt": "2019-03-24T12:00:00+02:00"
     },
     {
-      "id": "RC-UML_Operation",
-      "title": "UML:Operation",
-      "description": "A operation definition in UML (similar to a method or function in a programming language).",
-      "instantiation": [ "auto", "user" ],
-      "propertyClasses": ["PC-Name", 
-                          "PC-Text", 
-                          "PC-Type", 
-                          "PC-UML_VisibilityKind",
-                          "PC-Status"],
+      "id": "RC-UML_Model",
+      "title": "UML:Model",
+      "description": "Root node of a hierarchically organized UML model.",
+      "propertyClasses": [
+                          "PC-Name", 
+                          "PC-Text"
+                         ],
       "revision": 1,
-      "changedAt": "2019-03-08T16:00:00+02:00"
+      "changedAt": "2019-03-24T12:00:00+02:00"
+    },
+    {
+      "id": "RC-UML_SourceCode",
+      "title": "UML:SourceCode",
+      "description": "Source code assigned to a model element (e.g. an activity or operation). The name defines the programming language.",
+      "propertyClasses": [
+                          "PC-Name", 
+                          "PC-UML_Value"
+                         ],
+      "revision": 1,
+      "changedAt": "2019-03-24T12:00:00+02:00"
     }
   ],
   "statementClasses": [],
