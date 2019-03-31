@@ -4,59 +4,64 @@
   "specifVersion": "0.11.7",
   "dataTypes": [],
   "propertyClasses": [],
-  "resourceClasses": [
-    {
-      "id": "RC-UML_PassiveElement",
-      "title": "UML:PassiveElement",
-      "description": "A passive model element (e.g. class, component, state etc.).",
-      "extends" : "RC-State",
-      "instantiation": [ "auto", "user" ],
-      "propertyClasses": [ 
-                          "PC-Type", 
-                          "PC-UML_VisibilityKind", 
-                          "PC-UML_Multipilcity"
-                          ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00"
-    },
-    {
-      "id": "RC-UML_ActiveElement",
-      "title": "UML:ActiveElement",
-      "description": "An active model element (e.g. activity, event, operation, attribute etc.).",
-      "extends" : "RC-Actor",
-      "instantiation": [ "auto", "user" ],
-      "propertyClasses": [ 
-                          "PC-Type", 
-                          "PC-UML_Value",
-                          "PC-UML_VisibilityKind", 
-                          "PC-UML_Multipilcity"
-                          ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00"
-    },
-    {
-      "id": "RC-UML_Model",
-      "title": "UML:Model",
-      "description": "Root node of a hierarchically organized UML model.",
-      "propertyClasses": [
-                          "PC-Name", 
-                          "PC-Text"
-                         ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00"
-    },
-    {
-      "id": "RC-UML_SourceCode",
-      "title": "UML:SourceCode",
-      "description": "Source code assigned to a model element (e.g. an activity or operation). The name defines the programming language.",
-      "propertyClasses": [
-                          "PC-Name", 
-                          "PC-UML_Value"
-                         ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00"
-    }
-  ],
+	"resourceClasses": [
+		{
+			"id": "RC-UML_Package",
+			"title": "UML:Package",
+			"description": "Representation of an UML-Package.",
+			"extends": "RC-Folder",
+			"instantiation": [ "auto", "user" ],
+			"propertyClasses": [
+				"PC-UML_VisibilityKind",
+				"PC-Stereotype"
+			],
+			"revision": 1,
+			"changedAt": "2019-03-31T21:00:00+02:00"
+		},
+		{
+			"id": "RC-UML_PassiveElement",
+			"title": "UML:PassiveElement",
+			"description": "A passive model element (e.g. class, component, state etc.).",
+			"extends": "RC-State",
+			"instantiation": [ "auto", "user" ],
+			"propertyClasses": [
+				"PC-Type",
+				"PC-UML_VisibilityKind",
+				"PC-UML_Multipilcity",
+				"PC-Stereotype"
+			],
+			"revision": 1,
+			"changedAt": "2019-03-24T12:00:00+02:00"
+		},
+		{
+			"id": "RC-UML_ActiveElement",
+			"title": "UML:ActiveElement",
+			"description": "An active model element (e.g. activity, event, operation, attribute etc.).",
+			"extends": "RC-Actor",
+			"instantiation": [ "auto", "user" ],
+			"propertyClasses": [
+				"PC-Type",
+				"PC-Value",
+				"PC-UML_VisibilityKind",
+				"PC-UML_Multipilcity",
+				"PC-Stereotype"
+			],
+			"revision": 1,
+			"changedAt": "2019-03-24T12:00:00+02:00"
+		},
+		{
+			"id": "RC-UML_SourceCode",
+			"title": "UML:SourceCode",
+			"description": "Source code assigned to a model element (e.g. an activity or operation).",
+			"propertyClasses": [
+				"PC-Name",
+				"PC-UML_ImplementationLanguage",
+				"PC-Value"
+			],
+			"revision": 1,
+			"changedAt": "2019-03-24T12:00:00+02:00"
+		}
+	],
   "statementClasses": [],
   "hierarchyClasses": [],
   "resources": [],

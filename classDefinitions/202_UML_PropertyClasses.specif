@@ -3,86 +3,94 @@
   "title": "SpecIF property class definitions, required additionally for UML mapping.",
   "specifVersion": "0.11.7",
   "dataTypes": [],
-  "propertyClasses": [  
-        {
-          "id": "PC-Type",
-          "title": "dcterms:type",
-          "description": "The nature or genre of the resource. (http://purl.org/dc/elements/1.1/type)",
-          "dataType": "DT-ShortString",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_Value",
-          "title": "UML:Value",
-          "dataType": "DT-String",
-          "revision": 1,
-          "changedAt": "2019-03-24T12:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_VisibilityKind",
-          "title": "UML:VisibilityKind",
-          "dataType": "DT-UML_VisibilityKind",
-          "revision": 1,
-          "changedAt": "2019-03-09T22:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_Multipilcity",
-          "title": "UML:Multiplicity",
-          "dataType": "DT-ShortString",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_ConnectorDirection",
-          "title": "UML:ConnectorDirection",
-          "dataType": "DT-UML_ConnectorDirection",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_ConnectorSourceRole",
-          "title": "UML:ConnectorSourceRole",
-          "dataType": "DT-ShortString",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_ConnectorTargetRole",
-          "title": "UML:ConnectorTargetRole",
-          "dataType": "DT-ShortString",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_ConnectorSourceMultipilcity",
-          "title": "UML:ConnectorSourceMultiplicity",
-          "dataType": "DT-ShortString",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_ConnectorTargetMultiplicity",
-          "title": "UML:ConnectorTargetMultiplicity",
-          "dataType": "DT-ShortString",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_ConnectorSourceDataAccess",
-          "title": "UML:ConnectorSourceDataAccess",
-          "dataType": "DT-UML_DataAccess",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        },
-        {
-          "id": "PC-UML_ConnectorTargetDataAccess",
-          "title": "UML:ConnectorTargetDataAccess",
-          "dataType": "DT-UML_DataAccess",
-          "revision": 1,
-          "changedAt": "2019-03-08T16:00:00+02:00"
-        }        
-  ],
+	"propertyClasses": [
+		{
+			"id": "PC-Type",
+			"title": "dcterms:type",
+			"description": "The nature or genre of the resource. (http://purl.org/dc/elements/1.1/type)",
+			"dataType": "DT-ShortString",
+			"revision": 1,
+			"changedAt": "2019-03-08T16:00:00+02:00"
+		},
+		{
+			"id": "PC-Value",
+			"title": "rdf:value",
+			"dataType": "DT-String",
+			"revision": 1,
+			"changedAt": "2019-03-24T12:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_ImplementationLanguage",
+			"title": "UML:ImplementationLanguage",
+			"description": "The name of a used implementation language (e.g. C, C++, C#, Java, ADA, OCL, ALF etc.)",
+			"dataType": "DT-ShortString",
+			"revision": 1,
+			"changedAt": "2019-03-31T21:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_VisibilityKind",
+			"title": "UML:VisibilityKind",
+			"dataType": "DT-UML_VisibilityKind",
+			"revision": 1,
+			"changedAt": "2019-03-09T22:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_Multipilcity",
+			"title": "UML:Multiplicity",
+			"dataType": "DT-ShortString",
+			"revision": 1,
+			"changedAt": "2019-03-08T16:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_ConnectorDirection",
+			"title": "UML:ConnectorDirection",
+			"dataType": "DT-UML_ConnectorDirection",
+			"revision": 1,
+			"changedAt": "2019-03-08T16:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_ConnectorSourceRole",
+			"title": "UML:ConnectorSourceRole",
+			"dataType": "DT-ShortString",
+			"revision": 1,
+			"changedAt": "2019-03-08T16:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_ConnectorTargetRole",
+			"title": "UML:ConnectorTargetRole",
+			"dataType": "DT-ShortString",
+			"revision": 1,
+			"changedAt": "2019-03-08T16:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_ConnectorSourceMultipilcity",
+			"title": "UML:ConnectorSourceMultiplicity",
+			"dataType": "DT-ShortString",
+			"revision": 1,
+			"changedAt": "2019-03-08T16:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_ConnectorTargetMultiplicity",
+			"title": "UML:ConnectorTargetMultiplicity",
+			"dataType": "DT-ShortString",
+			"revision": 1,
+			"changedAt": "2019-03-08T16:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_ConnectorSourceDataAccess",
+			"title": "UML:ConnectorSourceDataAccess",
+			"dataType": "DT-UML_DataAccess",
+			"revision": 1,
+			"changedAt": "2019-03-08T16:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_ConnectorTargetDataAccess",
+			"title": "UML:ConnectorTargetDataAccess",
+			"dataType": "DT-UML_DataAccess",
+			"revision": 1,
+			"changedAt": "2019-03-08T16:00:00+02:00"
+		}
+	],
   "resourceClasses": [],
   "statementClasses": [],
   "resources": [],

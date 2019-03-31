@@ -16,36 +16,6 @@
       "objectClasses": [ "RC-UML_PassiveElement" ]
     },
     {
-      "id": "SC-UML_StereotypeReference",
-      "title": "UML:StereotypeReference",
-      "description": "Points to an UML Stereotype definition.",
-      "instantiation": [ "auto", "user" ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00",
-      "subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
-      "objectClasses": [ "RC-UML_PassiveElement" ]
-    },
-    {
-      "id": "SC-UML_AttributeReference",
-      "title": "UML:AtributeReference",
-      "description": "Points to an UML attribute/operation parameter/tagged value definition.",
-      "instantiation": [ "auto", "user" ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00",
-      "subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
-      "objectClasses": [ "RC-UML_ActiveElement" ]
-    },
-    {
-      "id": "SC-UML_OperationReference",
-      "title": "UML:OperationReference",
-      "description": "Points to an UML operation definition.",
-      "instantiation": [ "auto", "user" ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00",
-      "subjectClasses": ["RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
-      "objectClasses": [ "RC-UML_ActiveElement" ]
-    },
-    {
       "id": "SC-UML_BehaviorReference",
       "title": "UML:BehaviorReference",
       "description": "Points to a behavior definition (active element or source code).",
