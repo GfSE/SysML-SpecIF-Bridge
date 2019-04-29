@@ -46,7 +46,7 @@
 				"PC-UML_ConnectorDirection",
 				"PC-UML_ConnectorSourceRole",
 				"PC-UML_ConnectorTargetRole",
-				"PC-UML_ConnectorSourceMultipilcity",
+				"PC-UML_ConnectorSourceMultiplicity",
 				"PC-UML_ConnectorTargetMultiplicity",
 				"PC-UML_ConnectorSourceDataAccess",
 				"PC-UML_ConnectorTargetDataAccess"
