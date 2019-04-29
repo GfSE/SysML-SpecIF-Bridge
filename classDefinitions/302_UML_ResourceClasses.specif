@@ -32,6 +32,7 @@
 			},
 			"instantiation": [ "auto", "user" ],
 			"propertyClasses": [
+				"PC-UML_Alias",
 				"PC-Type",
 				"PC-UML_VisibilityKind",
 				"PC-UML_Multipilcity",
@@ -51,6 +52,7 @@
 			},
 			"instantiation": [ "auto", "user" ],
 			"propertyClasses": [
+				"PC-UML_Alias",
 				"PC-Type",
 				"PC-Value",
 				"PC-UML_VisibilityKind",
