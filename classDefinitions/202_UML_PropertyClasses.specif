@@ -97,7 +97,7 @@
 		{
 			"id": "PC-UML_ConnectorSourceDataAccess",
 			"title": "UML:ConnectorSourceDataAccess",
-			"dataType": "DT-UML_DataAccess",
+			"dataType": "DT-UML_VisibilityKind",
 			"revision": "main/1",
 			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
@@ -105,7 +105,7 @@
 		{
 			"id": "PC-UML_ConnectorTargetDataAccess",
 			"title": "UML:ConnectorTargetDataAccess",
-			"dataType": "DT-UML_DataAccess",
+			"dataType": "DT-UML_VisibilityKind",
 			"revision": "main/1",
 			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
