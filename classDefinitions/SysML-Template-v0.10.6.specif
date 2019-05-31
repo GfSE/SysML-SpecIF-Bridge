@@ -1,0 +1,612 @@
+{
+	"id": "P-ad200200057ae27e1653000005dd2afc",
+	"title": "Case-Study eHSUV with SysML",
+	"description": "System Specification of a hybrid SUV.",
+	"specifVersion": "0.10.6",
+	"generator": "Interactive-Spec",
+	"generatorVersion": "0.92.44",
+	"rights": {
+		"title": "Creative Commons 4.0 CC BY-SA",
+		"type": "dcterms:rights",
+		"url": "https://creativecommons.org/licenses/by-sa/4.0/"
+	},
+	"createdAt": "2019-05-22T17:48:42.504Z",
+	"createdBy": {
+		"familyName": "von Dungern",
+		"givenName": "Oskar",
+		"org": {
+			"organizationName": "adesso"
+		},
+		"email": {
+			"type": "text/html",
+			"value": "oskar.dungern@adesso.de"
+		}
+	},
+	"dataTypes": [{
+		"id": "DT-Boolean",
+		"title": "Boolean",
+		"type": "xs:boolean",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Integer",
+		"title": "Integer",
+		"type": "xs:integer",
+		"min": -32768,
+		"max": 32767,
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Real",
+		"title": "Real",
+		"type": "xs:double",
+		"accuracy": 5,
+		"min": -10000,
+		"max": 10000,
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Date",
+		"title": "Date or Timestamp",
+		"type": "xs:dateTime",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-ShortString",
+		"title": "String [96]",
+		"description": "String with length 96",
+		"type": "xs:string",
+		"maxLength": 96,
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-String",
+		"title": "String [512]",
+		"description": "String with length 512",
+		"type": "xs:string",
+		"maxLength": 512,
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Text",
+		"title": "dcterms:description",
+		"description": "String with length 8192",
+		"type": "xs:string",
+		"maxLength": 8192,
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-CommentText",
+		"title": "Datatype for comment text",
+		"description": "String type with length 1024 for comment text",
+		"type": "xs:string",
+		"maxLength": 1024,
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-FormattedText",
+		"title": "Formatted Text",
+		"type": "xhtml",
+		"maxLength": 8192,
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Priority",
+		"title": "SpecIF:Priority",
+		"description": "Enumerated values for requirement priority",
+		"type": "xs:enumeration",
+		"values": [{
+			"id": "V-Prio-0",
+			"title": "1_high"
+		}, {
+			"id": "V-Prio-1",
+			"title": "2_medium"
+		}, {
+			"id": "V-Prio-2",
+			"title": "3_low"
+		}],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Status",
+		"title": "SpecIF:Status",
+		"description": "Enumerated values for requirement status",
+		"type": "xs:enumeration",
+		"values": [{
+			"id": "V-Status-0",
+			"title": "00_deprecated"
+		}, {
+			"id": "V-Status-1",
+			"title": "00_rejected"
+		}, {
+			"id": "V-Status-2",
+			"title": "10_initial"
+		}, {
+			"id": "V-Status-3",
+			"title": "20_drafted"
+		}, {
+			"id": "V-Status-4",
+			"title": "30_submitted"
+		}, {
+			"id": "V-Status-5",
+			"title": "40_approved"
+		}, {
+			"id": "V-Status-6",
+			"title": "60_completed"
+		}, {
+			"id": "V-Status-7",
+			"title": "80_released"
+		}],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Discipline",
+		"title": "Discipline",
+		"description": "Enumerated values for engineering discipline",
+		"type": "xs:enumeration",
+		"values": [{
+			"id": "V-discipline-0",
+			"title": "Mechanics"
+		}, {
+			"id": "V-discipline-1",
+			"title": "Electronics"
+		}, {
+			"id": "V-discipline-2",
+			"title": "Software"
+		}, {
+			"id": "V-discipline-3",
+			"title": "Safety"
+		}],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Perspective",
+		"title": "Perspective",
+		"description": "Enumerated values for perspective",
+		"type": "xs:enumeration",
+		"values": [{
+			"id": "V-perspective-0",
+			"title": "Business"
+		}, {
+			"id": "V-perspective-1",
+			"title": "User"
+		}, {
+			"id": "V-perspective-2",
+			"title": "System"
+		}],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Notation",
+		"title": "Notation",
+		"description": "Enumerated values for notation",
+		"type": "xs:enumeration",
+		"values": [{
+			"id": "V-Notation-1",
+			"title": "SysML Use Case Diagram (uc)"
+		}, {
+			"id": "V-Notation-2",
+			"title": "SysML Activity Diagram (act)"
+		}, {
+			"id": "V-Notation-3",
+			"title": "SysML Sequence Diagram (seq)"
+		}, {
+			"id": "V-Notation-4",
+			"title": "SysML State Machine Diagram (stm)"
+		}, {
+			"id": "V-Notation-5",
+			"title": "SysML Requirement Diagram (req)"
+		}, {
+			"id": "V-Notation-6",
+			"title": "SysML Block Definition Diagram (bdd)"
+		}, {
+			"id": "V-Notation-7",
+			"title": "SysML Internal Block Diagram (ibd)"
+		}, {
+			"id": "V-Notation-8",
+			"title": "SysML Parametric Diagram (par)"
+		}, {
+			"id": "V-Notation-9",
+			"title": "SysML Package Diagram (pkg)"
+		}, {
+			"id": "V-Notation-21",
+			"title": "UML Class Diagram"
+		}],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Act-Stereotype",
+		"title": "SpecIF:Stereotype",
+		"description": "Stereotype describing the role of the model-element",
+		"type": "xs:enumeration",
+		"values": [{
+			"id": "V-Act-Stereotype-0",
+			"title": "System Boundary"
+		}, {
+			"id": "V-Act-Stereotype-1",
+			"title": "User Role"
+		}, {
+			"id": "V-Act-Stereotype-2",
+			"title": "Use Case"
+		}, {
+			"id": "V-Act-Stereotype-3",
+			"title": "Function"
+		}, {
+			"id": "V-Act-Stereotype-4",
+			"title": "System"
+		}, {
+			"id": "V-Act-Stereotype-5",
+			"title": "Subsystem"
+		}, {
+			"id": "V-Act-Stereotype-6",
+			"title": "Component"
+		}, {
+			"id": "V-Act-Stereotype-7",
+			"title": "Activity"
+		}, {
+			"id": "V-Act-Stereotype-8",
+			"title": "Input Port"
+		}, {
+			"id": "V-Act-Stereotype-9",
+			"title": "Output Port"
+		}],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "DT-Req-Stereotype",
+		"title": "SpecIF:Stereotype",
+		"description": "Describes the role of a resource of type 'IREB:Requirement'.",
+		"type": "xs:enumeration",
+		"values": [{
+			"id": "V-Req-Stereotype-0",
+			"title": "Original Requirement Specification"
+		}, {
+			"id": "V-Req-Stereotype-1",
+			"title": "System Requirement Specification"
+		}, {
+			"id": "V-Req-Stereotype-10",
+			"title": "Function Requirement (IREB)"
+		}, {
+			"id": "V-Req-Stereotype-11",
+			"title": "Quality Requirement (IREB)"
+		}, {
+			"id": "V-Req-Stereotype-12",
+			"title": "Constraint (IREB)"
+		}],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}],
+	"propertyClasses": [{
+		"id": "PC-VisibleId",
+		"title": "dcterms:identifier",
+		"dataType": "DT-ShortString",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "PC-Name",
+		"title": "dcterms:title",
+		"dataType": "DT-ShortString",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "PC-Text",
+		"title": "dcterms:description",
+		"dataType": "DT-FormattedText",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "PC-Diagram",
+		"title": "SpecIF:Diagram",
+		"dataType": "DT-FormattedText",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "PC-Notation",
+		"title": "SpecIF:Notation",
+		"dataType": "DT-Notation",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "PC-Status",
+		"title": "SpecIF:Status",
+		"dataType": "DT-Status",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "PC-Priority",
+		"title": "SpecIF:Priority",
+		"dataType": "DT-Priority",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "PC-Origin",
+		"title": "SpecIF:Origin",
+		"dataType": "DT-ShortString",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "PC-Act-Stereotype",
+		"title": "SpecIF:Stereotype",
+		"dataType": "DT-Act-Stereotype",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "PC-Req-Stereotype",
+		"title": "SpecIF:Stereotype",
+		"dataType": "DT-Req-Stereotype",
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}],
+	"resourceClasses": [{
+		"id": "RC-Folder",
+		"title": "SpecIF:Heading",
+		"isHeading": true,
+		"description": "Folders with title and text for chapters or descriptive paragraphs.",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PC-Name","PC-Text"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "RC-Paragraph",
+		"title": "SpecIF:Paragraph",
+		"description": "Information with title and text for descriptive paragraphs.",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PC-Name","PC-Text"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "RC-Diagram",
+		"title": "SpecIF:Diagram",
+		"description": "A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition.",
+		"icon": "&#9635;",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PC-Name","PC-Text","PC-Diagram","PC-Notation"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "RC-Actor",
+		"title": "FMC:Actor",
+		"description": "An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role.",
+		"icon": "&#9632;",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PC-Name","PC-Text","PC-Act-Stereotype"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "RC-State",
+		"title": "FMC:State",
+		"description": "A 'State' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape.",
+		"icon": "&#9679;",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PC-Name","PC-Text"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "RC-Event",
+		"title": "FMC:Event",
+		"description": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronisation primitive.",
+		"icon": "&#9830;",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PC-Name","PC-Text"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "RC-Feature",
+		"title": "SpecIF:Feature",
+		"description": "A Feature is an element of the feature canvas, often a proposition about the system.",
+		"icon": "&#10038;",
+		"instantiation": ["auto", "user"],
+		"propertyClasses": ["PC-Name","PC-Text"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "RC-Requirement",
+		"title": "IREB:Requirement",
+		"description": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.",
+		"icon": "&#8623;",
+		"instantiation": ["user"],
+		"propertyClasses": ["PC-VisibleId","PC-Name","PC-Text","PC-Status","PC-Priority","PC-Origin","PC-Req-Stereotype"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "RC-RequirementSpecification",
+		"title": "Requirement Specification",
+		"isHeading": true,
+		"description": "Original or System Requirement Specification",
+		"instantiation": ["user"],
+		"propertyClasses": ["PC-VisibleId","PC-Name","PC-Text","PC-Status","PC-Origin","PC-Req-Stereotype"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}, {
+		"id": "RC-Comment",
+		"title": "SpecIF:Comment",
+		"description": "Comment referring to a model element ('resource' in general).",
+		"instantiation": ["auto"],
+		"propertyClasses": ["PC-Text"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}],
+	"statementClasses": [{
+		"id": "SC-shows",
+		"title": "SpecIF:shows",
+		"description": "Plan shows Model-Element",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Diagram"],
+		"objectClasses": ["RC-Actor", "RC-State", "RC-Event"]
+	}, {
+		"id": "SC-contains",
+		"title": "SpecIF:contains",
+		"description": "Model-Element contains Model-Element",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor", "RC-State", "RC-Event"],
+		"objectClasses": ["RC-Actor", "RC-State", "RC-Event"]
+	}, {
+		"id": "SC-modifies",
+		"title": "SpecIF:modifies",
+		"description": "Actor (Role, Function) writes and reads State (Information)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-State"]
+	}, {
+		"id": "SC-writes",
+		"title": "SpecIF:writes",
+		"description": "Actor (Role, Function) writes State (Information)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-State"]
+	}, {
+		"id": "SC-reads",
+		"title": "SpecIF:reads",
+		"description": "Actor (Role, Function) reads State (Information)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-State"]
+	}, {
+		"id": "SC-commentRefersTo",
+		"title": "SpecIF:commentRefersTo",
+		"description": "Comment refers to a model element ('resource' in general).",
+		"instantiation": ["auto"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Comment"]
+	}, {
+		"id": "SC-satisfies",
+		"title": "oslc_rm:satisfies",
+		"description": "Actor (&#x00AB;Component&#x00BB;) satisfies Actor (&#x00AB;Requirement&#x00BB;).",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Feature"]
+	}, {
+		"id": "SC-implements",
+		"title": "SpecIF:implements",
+		"description": "Actor (&#x00AB;Component&#x00BB;) implements Feature.",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Feature"]
+	}, {
+		"id": "SC-isAssociatedWith",
+		"title": "SysML:isAssociatedWith",
+		"description": "An Actor is associated with an Actor.",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-isAllocatedTo",
+		"title": "SysML:isAllocatedTo",
+		"description": "Actor (&#x00AB;Function&#x00BB;) is allocated to Actor (&#x00AB;Component&#x00BB;)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-isComposedOf",
+		"title": "SysML:isComposedOf",
+		"description": "Actor isComposedOf Actor",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-isAggregatedBy",
+		"title": "SysML:isAggregatedBy",
+		"description": "Actor isAggregatedBy Actor",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-uses",
+		"title": "SysML:uses",
+		"description": "Actor (&#x00AB;Function&#x00BB;) uses Actor (&#x00AB;Function&#x00BB;)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-includes",
+		"title": "SysML:includes",
+		"description": "Actor (&#x00AB;Function&#x00BB;) includes Actor (&#x00AB;Function&#x00BB;)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-extends",
+		"title": "SysML:extends",
+		"description": "Actor (&#x00AB;Function&#x00BB;) extends Actor (&#x00AB;Function&#x00BB;)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-isGeneralisationOf",
+		"title": "SysML:isGeneralisationOf",
+		"description": "Actor (&#x00AB;Function&#x00BB;) isGeneralisationOf Actor (&#x00AB;Function&#x00BB;)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-traces",
+		"title": "SpecIF:traces",
+		"description": "Requirement traces Requirement",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Requirement"],
+		"objectClasses": ["RC-Requirement"]
+	}, {
+		"id": "SC-isDerivedFrom",
+		"title": "SpecIF:isDerivedFrom",
+		"description": "Requirement isDerivedFrom Requirement or Actor  (&#x00AB;Function&#x00BB;)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Requirement", "RC-Actor"],
+		"objectClasses": ["RC-Requirement"]
+	}, {
+		"id": "SC-refines",
+		"title": "IREB:refines",
+		"description": "Requirement refines Requirement",
+		"instantiation": ["user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Requirement"],
+		"objectClasses": ["RC-Requirement"]
+	}],
+	"hierarchyClasses": [{
+		"id": "HC-SystemSpec",
+		"title": "SpecIF:Hierarchy",
+		"description": "Root node of a specification (outline).",
+		"propertyClasses": ["PC-Name","PC-Text"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
+	}],
+	"resources": [],
+	"statements": [],
+	"hierarchies": [],
+	"files": []
+}
