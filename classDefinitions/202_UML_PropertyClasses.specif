@@ -1,99 +1,119 @@
 {
-  "id": "0885F9CB-2218-4087-99D8-BB94BACB334F",
-  "title": "SpecIF property class definitions, required additionally for UML mapping.",
-  "specifVersion": "0.11.7",
-  "dataTypes": [],
+	"id": "_0885F9CB_2218_4087_99D8_BB94BACB334F",
+	"title": "SpecIF property class definitions, required additionally for UML mapping.",
+	"specifVersion": "0.11.8",
+	"dataTypes": [],
 	"propertyClasses": [
 		{
 			"id": "PC-Type",
 			"title": "dcterms:type",
 			"description": "The nature or genre of the resource. (http://purl.org/dc/elements/1.1/type)",
 			"dataType": "DT-ShortString",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
 		},
 		{
 			"id": "PC-Value",
 			"title": "rdf:value",
 			"dataType": "DT-String",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-24T12:00:00+02:00"
+		},
+		{
+			"id": "PC-UML_Alias",
+			"title": "UML:Alias",
+			"dataType": "DT-ShortString",
+			"revision": "main/1",
+			"replaces": [],
+			"changedAt": "2019-04-26T12:00:00+02:00"
 		},
 		{
 			"id": "PC-UML_ImplementationLanguage",
 			"title": "UML:ImplementationLanguage",
-			"description": "The name of a used implementation language (e.g. C, C++, C#, Java, ADA, OCL, ALF etc.)",
+			"description": "The name of an used implementation language (e.g. C, C++, C#, Java, ADA, OCL, ALF etc.)",
 			"dataType": "DT-ShortString",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-31T21:00:00+02:00"
 		},
 		{
 			"id": "PC-UML_VisibilityKind",
 			"title": "UML:VisibilityKind",
 			"dataType": "DT-UML_VisibilityKind",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-09T22:00:00+02:00"
 		},
 		{
-			"id": "PC-UML_Multipilcity",
+			"id": "PC-UML_Multiplicity",
 			"title": "UML:Multiplicity",
 			"dataType": "DT-ShortString",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
 		},
 		{
 			"id": "PC-UML_ConnectorDirection",
 			"title": "UML:ConnectorDirection",
 			"dataType": "DT-UML_ConnectorDirection",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
 		},
 		{
 			"id": "PC-UML_ConnectorSourceRole",
 			"title": "UML:ConnectorSourceRole",
 			"dataType": "DT-ShortString",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
 		},
 		{
 			"id": "PC-UML_ConnectorTargetRole",
 			"title": "UML:ConnectorTargetRole",
 			"dataType": "DT-ShortString",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
 		},
 		{
-			"id": "PC-UML_ConnectorSourceMultipilcity",
+			"id": "PC-UML_ConnectorSourceMultiplicity",
 			"title": "UML:ConnectorSourceMultiplicity",
 			"dataType": "DT-ShortString",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
 		},
 		{
 			"id": "PC-UML_ConnectorTargetMultiplicity",
 			"title": "UML:ConnectorTargetMultiplicity",
 			"dataType": "DT-ShortString",
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
 		},
 		{
 			"id": "PC-UML_ConnectorSourceDataAccess",
 			"title": "UML:ConnectorSourceDataAccess",
-			"dataType": "DT-UML_DataAccess",
-			"revision": 1,
+			"dataType": "DT-UML_VisibilityKind",
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
 		},
 		{
 			"id": "PC-UML_ConnectorTargetDataAccess",
 			"title": "UML:ConnectorTargetDataAccess",
-			"dataType": "DT-UML_DataAccess",
-			"revision": 1,
+			"dataType": "DT-UML_VisibilityKind",
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-08T16:00:00+02:00"
 		}
 	],
-  "resourceClasses": [],
-  "statementClasses": [],
-  "resources": [],
-  "statements": [],
-  "hierarchies": []
+	"resourceClasses": [],
+	"statementClasses": [],
+	"resources": [],
+	"statements": [],
+	"hierarchies": []
 }

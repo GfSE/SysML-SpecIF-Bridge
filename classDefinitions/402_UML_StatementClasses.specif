@@ -1,54 +1,59 @@
 {
-  "id": "DAB858A7-41B3-4D6A-9C1F-0AD460430C54",
-  "title": "SpecIF statement class definitions for UML represenation",
-  "specifVersion": "0.11.7",
-  "dataTypes": [],
-  "resourceClasses": [],
-  "statementClasses": [
-    {
-      "id": "SC-Classifier",
-      "title": "rdf:type",
-      "description": "States that the relation subject is an instance of the relation object.",
-      "instantiation": [ "auto", "user" ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00",
-      "subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement"],
-      "objectClasses": [ "RC-UML_PassiveElement" ]
-    },
-    {
-      "id": "SC-UML_BehaviorReference",
-      "title": "UML:BehaviorReference",
-      "description": "Points to a behavior definition (active element or source code).",
-      "instantiation": [ "auto", "user" ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00",
-      "subjectClasses": ["RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
-      "objectClasses": [ "RC-UML_ActiveElement", "RC-UML_SourceCode" ]
-    },
-    {
-      "id": "SC-UML_Relationship",
-      "title": "UML:Relationship",
-      "description": "A Relationship is a Statement that specifies some kind of relationship between UML Elements defined in an UML model.",
-      "instantiation": [ "auto", "user" ],
-      "revision": 1,
-      "changedAt": "2019-03-24T12:00:00+02:00",
-      "subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
-      "objectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
-      "propertyClasses": [ "PC-Type",
-                           "PC-Name", 
-                           "PC-Text", 
-                           "PC-Status", 
-                           "PC-UML_ConnectorDirection",
-                           "PC-UML_ConnectorSourceRole",
-                           "PC-UML_ConnectorTargetRole",
-                           "PC-UML_ConnectorSourceMultipilcity",
-                           "PC-UML_ConnectorTargetMultiplicity",
-                           "PC-UML_ConnectorSourceDataAccess",
-                           "PC-UML_ConnectorTargetDataAccess"
-                          ]
-    }
-  ],
-  "resources": [],
-  "statements": [],
-  "hierarchies": []
+	"id": "_DAB858A7_41B3_4D6A_9C1F-0AD460430C54",
+	"title": "SpecIF statement class definitions for UML represenation",
+	"specifVersion": "0.11.8",
+	"dataTypes": [],
+	"resourceClasses": [],
+	"statementClasses": [
+		{
+			"id": "SC-Classifier",
+			"title": "rdf:type",
+			"description": "States that the relation subject is an instance of the relation object.",
+			"instantiation": [ "auto", "user" ],
+			"revision": "main/1",
+			"replaces": [],
+			"changedAt": "2019-03-24T12:00:00+02:00",
+			"subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
+			"objectClasses": [ "RC-UML_PassiveElement" ]
+		},
+		{
+			"id": "SC-UML_BehaviorReference",
+			"title": "UML:BehaviorReference",
+			"description": "Points to a behavior definition (active element or source code).",
+			"instantiation": [ "auto", "user" ],
+			"revision": "main/1",
+			"replaces": [],
+			"changedAt": "2019-03-24T12:00:00+02:00",
+			"subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
+			"objectClasses": [ "RC-UML_ActiveElement", "RC-UML_SourceCode" ]
+		},
+		{
+			"id": "SC-UML_Relationship",
+			"title": "UML:Relationship",
+			"description": "A UML:Relationship is a Statement that specifies some kind of relationship between UML Elements defined in an UML model.",
+			"instantiation": [ "auto", "user" ],
+			"revision": "main/1",
+			"replaces": [],
+			"changedAt": "2019-03-24T12:00:00+02:00",
+			"subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement", "SC-UML_Relationship" ],
+			"objectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement", "SC-UML_Relationship" ],
+			"propertyClasses": [
+				"PC-Type",
+				"PC-Name",
+				"PC-Text",
+				"PC-Status",
+				"PC-Stereotype",
+				"PC-UML_ConnectorDirection",
+				"PC-UML_ConnectorSourceRole",
+				"PC-UML_ConnectorTargetRole",
+				"PC-UML_ConnectorSourceMultiplicity",
+				"PC-UML_ConnectorTargetMultiplicity",
+				"PC-UML_ConnectorSourceDataAccess",
+				"PC-UML_ConnectorTargetDataAccess"
+			]
+		}
+	],
+	"resources": [],
+	"statements": [],
+	"hierarchies": []
 }

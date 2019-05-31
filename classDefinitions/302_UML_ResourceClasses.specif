@@ -1,7 +1,7 @@
 {
-  "id": "CA63CAFE-30E2-4FC6-A29E-A079EF65BCBB",
+  "id": "_CA63CAFE_30E2_4FC6_A29E-A079EF65BCBB",
   "title": "SpecIF resource class definitions for UML",
-  "specifVersion": "0.11.7",
+  "specifVersion": "0.11.8",
   "dataTypes": [],
   "propertyClasses": [],
 	"resourceClasses": [
@@ -9,44 +9,58 @@
 			"id": "RC-UML_Package",
 			"title": "UML:Package",
 			"description": "Representation of an UML-Package.",
-			"extends": "RC-Folder",
+			"extends": {
+				"id": "RC-Folder",
+				"revision": "main/1"
+			},
 			"instantiation": [ "auto", "user" ],
 			"propertyClasses": [
 				"PC-UML_VisibilityKind",
 				"PC-Stereotype"
 			],
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-31T21:00:00+02:00"
 		},
 		{
 			"id": "RC-UML_PassiveElement",
 			"title": "UML:PassiveElement",
 			"description": "A passive model element (e.g. class, component, state etc.).",
-			"extends": "RC-State",
+			"extends": {
+				"id": "RC-State",
+				"revision": "main/1"
+			},
 			"instantiation": [ "auto", "user" ],
 			"propertyClasses": [
+				"PC-UML_Alias",
 				"PC-Type",
 				"PC-UML_VisibilityKind",
-				"PC-UML_Multipilcity",
+				"PC-UML_Multiplicity",
 				"PC-Stereotype"
 			],
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-24T12:00:00+02:00"
 		},
 		{
 			"id": "RC-UML_ActiveElement",
 			"title": "UML:ActiveElement",
 			"description": "An active model element (e.g. activity, event, operation, attribute etc.).",
-			"extends": "RC-Actor",
+			"extends": {
+				"id": "RC-Actor",
+				"revision": "main/1"
+			},
 			"instantiation": [ "auto", "user" ],
 			"propertyClasses": [
+				"PC-UML_Alias",
 				"PC-Type",
 				"PC-Value",
 				"PC-UML_VisibilityKind",
-				"PC-UML_Multipilcity",
+				"PC-UML_Multiplicity",
 				"PC-Stereotype"
 			],
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-24T12:00:00+02:00"
 		},
 		{
@@ -58,7 +72,8 @@
 				"PC-UML_ImplementationLanguage",
 				"PC-Value"
 			],
-			"revision": 1,
+			"revision": "main/1",
+			"replaces": [],
 			"changedAt": "2019-03-24T12:00:00+02:00"
 		}
 	],
