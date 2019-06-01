@@ -1,7 +1,7 @@
 {
-	"id": "P-ad200200057ae27e1653000005dd2afc",
-	"title": "Case-Study eHSUV with SysML",
-	"description": "System Specification of a hybrid SUV.",
+	"id": "P-SysML-0002",
+	"title": "Template for SysML",
+	"description": "",
 	"specifVersion": "0.10.6",
 	"generator": "Interactive-Spec",
 	"generatorVersion": "0.92.44",
@@ -445,8 +445,8 @@
 		"subjectClasses": ["RC-Actor", "RC-State", "RC-Event"],
 		"objectClasses": ["RC-Actor", "RC-State", "RC-Event"]
 	}, {
-		"id": "SC-modifies",
-		"title": "SpecIF:modifies",
+		"id": "SC-stores",
+		"title": "SpecIF:stores",
 		"description": "Actor (Role, Function) writes and reads State (Information)",
 		"instantiation": ["auto", "user"],
 		"revision": 1,
@@ -498,15 +498,6 @@
 		"subjectClasses": ["RC-Actor"],
 		"objectClasses": ["RC-Feature"]
 	}, {
-		"id": "SC-isAssociatedWith",
-		"title": "SysML:isAssociatedWith",
-		"description": "An Actor is associated with an Actor.",
-		"instantiation": ["auto", "user"],
-		"revision": 1,
-		"changedAt": "2019-03-16T19:59:00+02:00",
-		"subjectClasses": ["RC-Actor"],
-		"objectClasses": ["RC-Actor"]
-	}, {
 		"id": "SC-isAllocatedTo",
 		"title": "SysML:isAllocatedTo",
 		"description": "Actor (&#x00AB;Function&#x00BB;) is allocated to Actor (&#x00AB;Component&#x00BB;)",
@@ -516,9 +507,18 @@
 		"subjectClasses": ["RC-Actor"],
 		"objectClasses": ["RC-Actor"]
 	}, {
+		"id": "SC-isAssociatedWith",
+		"title": "SpecIF:isAssociatedWith",
+		"description": "An Actor is associated with an Actor.",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
 		"id": "SC-isComposedOf",
 		"title": "SysML:isComposedOf",
-		"description": "Actor isComposedOf Actor",
+		"description": "Actor is composed of Actor",
 		"instantiation": ["auto", "user"],
 		"revision": 1,
 		"changedAt": "2019-03-16T19:59:00+02:00",
@@ -527,7 +527,25 @@
 	}, {
 		"id": "SC-isAggregatedBy",
 		"title": "SysML:isAggregatedBy",
-		"description": "Actor isAggregatedBy Actor",
+		"description": "Actor is aggregated by Actor",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-isSpecialisationOf",
+		"title": "SysML:isSpecialisationOf",
+		"description": "Actor (&#x00AB;Function&#x00BB;) is generalisation of Actor (&#x00AB;Function&#x00BB;)",
+		"instantiation": ["auto", "user"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00",
+		"subjectClasses": ["RC-Actor"],
+		"objectClasses": ["RC-Actor"]
+	}, {
+		"id": "SC-actorInheritsFrom",
+		"title": "SysML:actorInheritsFrom",
+		"description": "Actor (&#x00AB;Function&#x00BB;) inherits from another Actor (&#x00AB;Function&#x00BB;)",
 		"instantiation": ["auto", "user"],
 		"revision": 1,
 		"changedAt": "2019-03-16T19:59:00+02:00",
@@ -561,15 +579,6 @@
 		"subjectClasses": ["RC-Actor"],
 		"objectClasses": ["RC-Actor"]
 	}, {
-		"id": "SC-isGeneralisationOf",
-		"title": "SysML:isGeneralisationOf",
-		"description": "Actor (&#x00AB;Function&#x00BB;) isGeneralisationOf Actor (&#x00AB;Function&#x00BB;)",
-		"instantiation": ["auto", "user"],
-		"revision": 1,
-		"changedAt": "2019-03-16T19:59:00+02:00",
-		"subjectClasses": ["RC-Actor"],
-		"objectClasses": ["RC-Actor"]
-	}, {
 		"id": "SC-traces",
 		"title": "SpecIF:traces",
 		"description": "Requirement traces Requirement",
@@ -581,7 +590,7 @@
 	}, {
 		"id": "SC-isDerivedFrom",
 		"title": "SpecIF:isDerivedFrom",
-		"description": "Requirement isDerivedFrom Requirement or Actor  (&#x00AB;Function&#x00BB;)",
+		"description": "Requirement is derived from Requirement or Actor  (&#x00AB;Function&#x00BB;)",
 		"instantiation": ["auto", "user"],
 		"revision": 1,
 		"changedAt": "2019-03-16T19:59:00+02:00",
@@ -596,6 +605,14 @@
 		"changedAt": "2019-03-16T19:59:00+02:00",
 		"subjectClasses": ["RC-Requirement"],
 		"objectClasses": ["RC-Requirement"]
+	}],
+	"hierarchyClasses": [{
+		"id": "HC-SystemSpec",
+		"title": "SpecIF:Hierarchy",
+		"description": "Root node of a specification (outline).",
+		"propertyClasses": ["PC-Name","PC-Text"],
+		"revision": 1,
+		"changedAt": "2019-03-16T19:59:00+02:00"
 	}],
 	"hierarchyClasses": [{
 		"id": "HC-SystemSpec",
