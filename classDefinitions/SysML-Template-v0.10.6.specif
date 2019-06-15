@@ -97,13 +97,13 @@
 		"type": "xs:enumeration",
 		"values": [{
 			"id": "V-Prio-0",
-			"title": "1_high"
+			"title": "SpecIF:priorityHigh"
 		}, {
 			"id": "V-Prio-1",
-			"title": "2_medium"
+			"title": "SpecIF:priorityMedium"
 		}, {
 			"id": "V-Prio-2",
-			"title": "3_low"
+			"title": "SpecIF:priorityLow"
 		}],
 		"revision": 1,
 		"changedAt": "2019-03-16T19:59:00+02:00"
