@@ -6,64 +6,6 @@
   "propertyClasses": [],
 	"resourceClasses": [
 		{
-			"id": "RC-UML_Package",
-			"title": "UML:Package",
-			"description": "Representation of an UML-Package.",
-			"extends": {
-				"id": "RC-Folder",
-				"revision": "main/1"
-			},
-			"instantiation": [ "auto", "user" ],
-			"propertyClasses": [
-				"PC-UML_VisibilityKind",
-				"PC-Stereotype"
-			],
-			"revision": "main/1",
-			"replaces": [],
-			"changedAt": "2019-03-31T21:00:00+02:00"
-		},
-		{
-			"id": "RC-UML_PassiveElement",
-			"title": "UML:PassiveElement",
-			"description": "A passive model element (e.g. class, component, state etc.).",
-			"extends": {
-				"id": "RC-State",
-				"revision": "main/1"
-			},
-			"instantiation": [ "auto", "user" ],
-			"propertyClasses": [
-				"PC-UML_Alias",
-				"PC-Type",
-				"PC-UML_VisibilityKind",
-				"PC-UML_Multiplicity",
-				"PC-Stereotype"
-			],
-			"revision": "main/1",
-			"replaces": [],
-			"changedAt": "2019-03-24T12:00:00+02:00"
-		},
-		{
-			"id": "RC-UML_ActiveElement",
-			"title": "UML:ActiveElement",
-			"description": "An active model element (e.g. activity, event, operation, attribute etc.).",
-			"extends": {
-				"id": "RC-Actor",
-				"revision": "main/1"
-			},
-			"instantiation": [ "auto", "user" ],
-			"propertyClasses": [
-				"PC-UML_Alias",
-				"PC-Type",
-				"PC-Value",
-				"PC-UML_VisibilityKind",
-				"PC-UML_Multiplicity",
-				"PC-Stereotype"
-			],
-			"revision": "main/1",
-			"replaces": [],
-			"changedAt": "2019-03-24T12:00:00+02:00"
-		},
-		{
 			"id": "RC-UML_SourceCode",
 			"title": "UML:SourceCode",
 			"description": "Source code assigned to a model element (e.g. an activity or operation).",

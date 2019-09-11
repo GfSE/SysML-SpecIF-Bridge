@@ -4,41 +4,6 @@
   "specifVersion": "0.11.8",
   "dataTypes": [
 	{
-		"id": "DT-UML_VisibilityKind",
-		"title": "UML:VisibilityKind",
-		"description": "Enumerated values for a UML connector direction",
-		"type": "xs:enumeration",
-		"values": [
-			{
-				"id": "V-UML_VisibilityKind-0",
-				"title": "Public"
-			},
-			{
-				"id": "V-UML_VisibilityKind-1",
-				"title": "Private"
-			},
-			{
-				"id": "V-UML_VisibilityKind-2",
-				"title": "Protected"
-			},
-			{
-				"id": "V-UML_VisibilityKind-3",
-				"title": "Package"
-			},
-			{
-				"id": "V-UML_VisibilityKind-4",
-				"title": "Internal"
-			},
-			{
-				"id": "V-UML_VisibilityKind-5",
-				"title": "Protected Internal"
-			}
-		],
-		"revision": "main/1",
-		"replaces": [],
-		"changedAt": "2019-03-08T16:00:00+02:00"
-	},
-	{
 		"id": "DT-UML_ConnectorDirection",
 		"title": "UML:ConnectorDirection",
 		"description": "Enumerated values for a UML connector direction",

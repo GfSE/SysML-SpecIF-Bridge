@@ -6,17 +6,6 @@
 	"resourceClasses": [],
 	"statementClasses": [
 		{
-			"id": "SC-Classifier",
-			"title": "rdf:type",
-			"description": "States that the relation subject is an instance of the relation object.",
-			"instantiation": [ "auto", "user" ],
-			"revision": "main/1",
-			"replaces": [],
-			"changedAt": "2019-03-24T12:00:00+02:00",
-			"subjectClasses": [ "RC-UML_ActiveElement", "RC-UML_PassiveElement" ],
-			"objectClasses": [ "RC-UML_PassiveElement" ]
-		},
-		{
 			"id": "SC-UML_BehaviorReference",
 			"title": "UML:BehaviorReference",
 			"description": "Points to a behavior definition (active element or source code).",
